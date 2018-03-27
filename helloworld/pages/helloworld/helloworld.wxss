@@ -1,0 +1,8 @@
+view{
+  widows: 100%;
+  height: 140rpx;
+  text-align: center;
+  background-color: #ff0;
+  color: #0ff;
+  font-size: 68rpx;
+}
