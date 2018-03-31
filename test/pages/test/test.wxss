@@ -1,4 +1,11 @@
 view{
-  width: 100rpx;
-  height: 50rpx;
+ margin: 0 auto;
+}
+
+text{
+   width: 100rpx;
+  /* height: 50rpx; */
+  text-align: center;
+  background-color: #00f;
+  color: #fff;
 }
