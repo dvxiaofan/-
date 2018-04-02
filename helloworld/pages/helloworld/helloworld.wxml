@@ -1,9 +1,11 @@
- <view>
+ <!-- <view>
   <text>{{profile.nickName}}</text>
   <image src='{{profile.avatarUrl}}'        mode='widthFix'></image>
   <button open-type='getUserInfo' bindgetuserinfo='getProfile'>点击变身</button>
 
-</view> 
+</view>  -->
+
+<view hidden='{{flag ? ture : false}}'>Hidden</view>
 
 
 
