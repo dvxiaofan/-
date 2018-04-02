@@ -15,14 +15,31 @@ Page({
   //   flag: false
   // }
 
+  // data:{
+  //   items:[
+  //     { name: "商品A" },
+  //     { name: "商品B" },
+  //     { name: "商品C" },
+  //     { name: "商品D" },
+  //     { name: "商品E" },
+  //     { name: "商品F" }
+  //   ]
+  // }
+
   data:{
-    items:[
-      { name: "商品A" },
-      { name: "商品B" },
-      { name: "商品C" },
-      { name: "商品D" },
-      { name: "商品E" },
-      { name: "商品F" }
-    ]
+    condition:Math.floor(Math.random()*3+1)
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 })

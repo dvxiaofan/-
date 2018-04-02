@@ -7,13 +7,18 @@
 
 <!-- <view hidden='{{flag ? ture : false}}'>Hidden</view> -->
 
-<view>
+<!-- <view>
   <block wx:for="{{items}}" wx:for-item="item" wx:key="index">
     <view>{{index}}:{{item.name}}</view>
   </block>
-</view>
+</view> -->
 
 
+<view>今天吃什么?</view>
+
+<view wx:if="{{condition === 1}}">饺子</view>
+<view wx:elif="{{condition === 2}}">面食</view>
+<view wx:else>米饭</view>
 
 
 
