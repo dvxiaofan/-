@@ -1,4 +1,4 @@
- <!-- <view>
+<!-- <view>
   <text>{{profile.nickName}}</text>
   <image src='{{profile.avatarUrl}}'        mode='widthFix'></image>
   <button open-type='getUserInfo' bindgetuserinfo='getProfile'>点击变身</button>
@@ -14,12 +14,18 @@
 </view> -->
 
 
-<view>今天吃什么?</view>
+<!-- <view>今天吃什么?</view>
 
 <view wx:if="{{condition === 1}}">饺子</view>
 <view wx:elif="{{condition === 2}}">面食</view>
-<view wx:else>米饭</view>
+<view wx:else>米饭</view> -->
 
+<template name="tempItem">
+  <view>
+    <view>收件人：{{name}}</view>
+    <view>联系方式：{{phone}}</view>
+    <view>地址：{{address}}</view>
+  </view>
+</template>
 
-
-
+ <template is="tempItem" data="{{...item}}"></template> 

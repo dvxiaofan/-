@@ -26,10 +26,17 @@ Page({
   //   ]
   // }
 
-  data:{
-    condition:Math.floor(Math.random()*3+1)
-  }
+  // data:{
+  //   condition:Math.floor(Math.random()*3+1)
+  // }
 
+data:{
+    item:{
+      name: "xiaoming",
+      phone:"110",
+      address:"nanjinglu"
+    }
+}
 
 
 
