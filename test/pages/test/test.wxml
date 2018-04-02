@@ -9,7 +9,7 @@
 <button bindtap='changeObjectData'>change object data</button>
 <view>{{newField.text}}</view>
 <button bindtap="addNewField"> Add new data </button> -->
-
+<!-- 
 <template name = "staffName">
   <view>
     FirstName:{{firstName}}, LastName:{{lastName}}
@@ -18,7 +18,13 @@
 
 <template is = "staffName" data = "{{...staffA}}"></template>
 <template is = "staffName" data = "{{...staffb}}"></template>
-<template is = "staffName" data = "{{...staffc}}"></template>
+<template is = "staffName" data = "{{...staffc}}"></template> -->
+
+<view bindtap='add'>{{count}}</view>
+
+
+
+
 
 
 

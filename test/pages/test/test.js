@@ -34,10 +34,19 @@ Page({
   //   })
   // }
 
+// data:{
+//   staffA:{firstName:'Huk', lastName:'heheh'},
+//   staffB:{firstName:'yankun', lastName:'zhang'},
+//   staffC:{firstName:'ming', lastName:'li'}
+// }
+
 data:{
-  staffA:{firstName:'Huk', lastName:'heheh'},
-  staffB:{firstName:'yankun', lastName:'zhang'},
-  staffC:{firstName:'ming', lastName:'li'}
+  count:1
+},
+add: function(e){
+  this.setData({
+    count:this.data.count + 1
+  })
 }
 
 
