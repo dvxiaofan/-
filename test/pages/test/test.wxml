@@ -1,5 +1,5 @@
 <!-- <view><text>test</text></view> -->
-<view>{{text}}</view>
+<!-- <view>{{text}}</view>
 <button bindtap='changeText'>change normal text</button>
 <view>{{num}}</view>
 <button bindtap='changeNum'>change normal num</button>
@@ -8,4 +8,19 @@
 <view>{{object.text}}</view>
 <button bindtap='changeObjectData'>change object data</button>
 <view>{{newField.text}}</view>
-<button bindtap="addNewField"> Add new data </button>
+<button bindtap="addNewField"> Add new data </button> -->
+
+<template name = "staffName">
+  <view>
+    FirstName:{{firstName}}, LastName:{{lastName}}
+  </view>
+</template>
+
+<template is = "staffName" data = "{{...staffA}}"></template>
+<template is = "staffName" data = "{{...staffb}}"></template>
+<template is = "staffName" data = "{{...staffc}}"></template>
+
+
+
+
+
