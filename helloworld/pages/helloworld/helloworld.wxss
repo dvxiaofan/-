@@ -1,7 +1,7 @@
-view{
+  /* view{
   widows: 100%;
-  /* text-align: center; */
-  /* background-color: #ff0; */
+   text-align: center; 
+   background-color: #ff0; 
   color: #0ff;
   font-size: 68rpx;
 
@@ -16,4 +16,4 @@ image{
   width: 150rpx;
    height: 150rpx; 
   border-radius: 50%;
-}
+}   */

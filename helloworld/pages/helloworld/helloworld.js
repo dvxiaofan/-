@@ -11,7 +11,18 @@ Page({
   //     'avatarUrl':'../../img/icon.jpg'
   //   }
   // }
+  // data:{
+  //   flag: false
+  // }
+
   data:{
-    flag: false
+    items:[
+      { name: "商品A" },
+      { name: "商品B" },
+      { name: "商品C" },
+      { name: "商品D" },
+      { name: "商品E" },
+      { name: "商品F" }
+    ]
   }
 })

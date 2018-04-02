@@ -5,7 +5,13 @@
 
 </view>  -->
 
-<view hidden='{{flag ? ture : false}}'>Hidden</view>
+<!-- <view hidden='{{flag ? ture : false}}'>Hidden</view> -->
+
+<view>
+  <block wx:for="{{items}}" wx:for-item="item" wx:key="index">
+    <view>{{index}}:{{item.name}}</view>
+  </block>
+</view>
 
 
 
