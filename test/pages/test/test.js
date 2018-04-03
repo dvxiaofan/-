@@ -40,14 +40,14 @@ Page({
 //   staffC:{firstName:'ming', lastName:'li'}
 // }
 
-data:{
-  count:1
-},
-add: function(e){
-  this.setData({
-    count:this.data.count + 1
-  })
-}
+// data:{
+//   count:1
+// },
+// add: function(e){
+//   this.setData({
+//     count:this.data.count + 1
+//   })
+// }
 
 
 
