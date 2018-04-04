@@ -1,2 +1,15 @@
 
-module.exports = require('./m1.wxs')
+// 引用
+// module.exports = require('./m1.wxs')
+
+var getMax = function(array){
+  var max = undefined;
+  for (var i = 0; i < array.length; ++i){
+    max = max === undefined ? 
+    array[i] : (max >= array[i] ? max : array[i]);
+  }
+  return max;
+}
+
+module.exports.getMax = getMax;
+
