@@ -40,9 +40,33 @@
 </view> -->
 
 
-<switch wx:for="{{objectArray}}" wx:key="unique" style='display:block;'>{{item.id}}</switch>
+<!-- <switch wx:for="{{objectArray}}" wx:key="unique" style='display:block;'>{{item.id}}</switch>
 <button bindtap='switch'>Switch</button>
 <button bindtap='addToFrond'>add to frond</button>
 
 <switch wx:for="{{numArray}}" wx:key="this" style='display:block'>{{item}}</switch>
-<button bindtap='addNumToFrond'>add to frond</button>
+<button bindtap='addNumToFrond'>add to frond</button> -->
+
+<!--定义模板  -->
+<template name="msgItem">
+  <view>
+    <text>{{index}}:{{msg}}</text>
+    <text>Time:{{time}}</text>
+  </view>
+</template>
+
+<!--使用模板  -->
+<!-- <template is="msgItem" data="{{...item}}" /> -->
+
+<!--is 属性可以使用 Mustache 语法，来动态决定具体需要渲染哪个模板  -->
+<template name="obb">
+  <view>obb</view>
+</template>
+
+<template name="even">
+  <view>even</view>
+</template>
+
+<block wx:for="{{[1,2,3,4,5]}}">
+  <template is="{{item % 2 == 0 ? 'even' : 'obb'}}"/>
+</block>
