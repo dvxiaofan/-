@@ -17,3 +17,8 @@ image{
    height: 150rpx; 
   border-radius: 50%;
 }   */
+/*外联样式引用  */
+/* @import './asset.wxss';
+.container{
+  color: #ff0;
+} */

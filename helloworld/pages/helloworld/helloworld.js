@@ -30,13 +30,16 @@ Page({
   //   condition:Math.floor(Math.random()*3+1)
   // }
 
-data:{
-    item:{
-      name: "xiaoming",
-      phone:"110",
-      address:"nanjinglu"
-    }
-}
+// data:{
+//     item:{
+//       name: "xiaoming",
+//       phone:"110",
+//       address:"nanjinglu"
+//     }
+// }
+
+
+
 
 
 

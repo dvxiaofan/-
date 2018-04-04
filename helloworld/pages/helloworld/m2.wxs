@@ -1,0 +1,2 @@
+
+module.exports = require('./m1.wxs')

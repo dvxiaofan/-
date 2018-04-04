@@ -20,7 +20,7 @@
 <view wx:elif="{{condition === 2}}">面食</view>
 <view wx:else>米饭</view> -->
 
-<template name="tempItem">
+<!-- <template name="tempItem">
   <view>
     <view>收件人：{{name}}</view>
     <view>联系方式：{{phone}}</view>
@@ -29,3 +29,20 @@
 </template>
 
  <template is="tempItem" data="{{...item}}"></template> 
+  -->
+
+<!-- <view class='container'>
+  hello world 
+</view> -->
+
+<!-- wxs  -->
+<!-- <wxs module="m1">
+  module.exports = {
+      message: 'hello world'
+  }
+</wxs>
+
+<view>{{m1.message}}</view> -->
+
+<wxs src="./m2.wxs" module="m2"></wxs>
+<view>{{m2.message}}</view>
