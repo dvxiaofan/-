@@ -54,9 +54,18 @@
 
 <!-- @import helloworld.wxss -->
 
-<view class='container-A' bindtap='clickA'>container-A
+<!-- <view class='container-A' bindtap='clickA'>container-A
   <view class='container-B' catchtap='clickB'>container-B
     <view class='container-C' bindtap='clickC'>container-C
+    </view>
+  </view>
+</view> -->
+
+<!--组件  -->
+<view class='section'>
+  <view>view 组件</view>
+  <view class='view-parent-container'         hover-class='hover-parent-container'>
+    <view class='view-container' hover-class='hover-container' hover-stop-propagation='true' hover-stay-time='500' hover-stay-time='300'>
     </view>
   </view>
 </view>

@@ -44,20 +44,15 @@ Page({
 //   console.log(e)
 // }
 
-  clickA() {
-    console.log("clickA")
-  },
-  clickB() {
-    console.log("clickB")
-  },
-  clickC() {
-    console.log("clickC")
-  }
-
-
-
-
-
+  // clickA() {
+  //   console.log("clickA")
+  // },
+  // clickB() {
+  //   console.log("clickB")
+  // },
+  // clickC() {
+  //   console.log("clickC")
+  // }
 
 
 
