@@ -1,4 +1,4 @@
-.controls {
+/* .controls {
   position: relative;
   top: 50%;
   height: 50px;
@@ -19,4 +19,14 @@
   width: 40px;
   height: 40px;
   margin: 5px auto;
+} */
+
+/** wxss **/
+/** 修改button默认的点击态样式类**/
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
 }
