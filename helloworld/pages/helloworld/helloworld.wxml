@@ -62,10 +62,32 @@
 </view> -->
 
 <!--组件  -->
-<view class='section'>
+<!-- <view class='section'>
   <view>view 组件</view>
   <view class='view-parent-container'         hover-class='hover-parent-container'>
     <view class='view-container' hover-class='hover-container' hover-stop-propagation='true' hover-stay-time='500' hover-stay-time='300'>
     </view>
   </view>
-</view>
+</view> -->
+
+<!--scroll view  -->
+<!-- <view>scroll view 组件</view> -->
+<!-- <view class='section'>
+  <view class='section-title'>竖向滚动</view>
+  <scroll-view style='height: 200px;' 
+      scroll-y 
+      bindscrolltoupper="upper" 
+      bindscrolltolower="lower" 
+      bindscroll="scroll" 
+      scroll-into-view="{{toView}}" 
+      scroll-top="{{scrollTop}}" 
+      enble-back-to-top="true">
+
+      <view id='green' class='scroll-view-item'></view>
+      <view id='red' class='scroll-view-item'></view>
+      <view id='blue' class='scroll-view-item'></view>
+      <view id='yellow' class='scroll-view-item'></view>
+    
+  </scroll-view>
+</view> -->
+

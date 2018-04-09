@@ -43,7 +43,7 @@ image{
 } */
 
 /* 组件  */
-.view-parent-container {
+/* .view-parent-container {
   width: 600rpx;
   height: 600rpx;
   background: yellow;
@@ -51,9 +51,9 @@ image{
 
 .hover-parent-container {
   background: #fff;
-}
+} */
 
-.view-container {
+/* .view-container {
    width: 300rpx;
   height: 300rpx; 
   background-color: rebeccapurple;
@@ -64,4 +64,44 @@ image{
 
 .hover-container {
   background: rgba(0, 0, 0, .5);
+} */
+
+/* scroll-view  */
+scroll-view {
+  /* width:80%; */
 }
+
+.scroll-view-item{
+  width: 100%;
+  height: 100%;
+}
+
+#green {
+  background: green;
+}
+
+#red {
+  background: red;
+}
+
+#blue {
+  background: blue;
+}
+
+#yellow {
+  background: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
