@@ -8,4 +8,10 @@
 </view> -->
 
 
-<rich-text nodes="{{nodes}}" bindtap='tap'></rich-text>
+<!-- <rich-text nodes="{{nodes}}" bindtap='tap'></rich-text> -->
+
+<view>Progress</view>
+<progress percent='20' show-info></progress>
+<progress percent='40' stroke-width='14'></progress>
+<progress percent='60' color='pink'></progress>
+<progress percent='80' active></progress>
