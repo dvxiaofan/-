@@ -1,8 +1,11 @@
 <!--index.wxml-->
-<view class='btn-area'>
+<!-- <view class='btn-area'>
   <view class='body-view'>
     <text>{{text}}</text>
     <button bindtap='add'>add line</button>
     <button bindtap='remove'>remove line</button>
   </view>
-</view>
+</view> -->
+
+
+<rich-text nodes="{{nodes}}" bindtap='tap'></rich-text>
