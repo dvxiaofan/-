@@ -9,3 +9,11 @@ view{
 progress{
   padding-top: 60px;
 }
+
+.navigator-hover {
+  color: blue;
+}
+
+.other-navigator-hover {
+  color: red;
+}
