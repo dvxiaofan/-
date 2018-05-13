@@ -1,0 +1,1 @@
+<map longitude="113.324520" latitude="23.099994" id="map" scale="14" controls="{{controltap}}" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="widtd: 100%; height: 300px;"></map>
