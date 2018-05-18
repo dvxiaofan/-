@@ -1,1 +1,8 @@
-<map longitude="113.324520" latitude="23.099994" id="map" scale="14" controls="{{controltap}}" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="widtd: 100%; height: 300px;"></map>
+<map id="myMap" show-location markers="{{markers}}" style="width: 750rpx; height: 200px"></map>
+
+<button type="primary" bindtap="getCenterLocation">获取位置</button>
+<button type="primary" bindtap="moveToLocation">移动位置</button>
+<button type="primary" bindtap="translateMarker">移动标注</button>
+<button type="primary" bindtap="includePoints">缩放视野展示所有坐标点</button>
+<button type="primary" bindtap="getRegion">获取当前视野范围</button>
+<button type="primary" bindtap="getScale">获取当前缩放级别</button>

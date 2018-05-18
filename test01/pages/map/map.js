@@ -1,44 +1,92 @@
 Page({
+
 	data: {
 		markers: [{
-		  iconPath: "/resources/others.png",
-		  id: 0,
-		  latitude: 23.099994,
-		  longitude: 113.324520,
-		  width: 50,
-		  height: 50
+			id: 1,
+			latitude: 22.540822,
+			longitude: 113.934457,
+			name: '腾讯大厦',
+			label: {
+				content: '这是腾讯大厦',
+				color: '#333',
+				x: 4,
+				y: 0,
+				borderWidth: 1,
+				borderColor: '#000',
+				bgColor: '#fff',
+				padding: 2,
+				textAlign: 'center'
+			}
+		}, {
+			id: 2,
+			latitude: 39.892778,
+			longitude: 116.421915,
+			name: '北京',
+			label: {
+				content: '这是首都',
+				color: '#fff',
+				fontSize: 15,
+				borderRadius: 10,
+				bgColor: '#000',
+				display: 'ALWAYS'
+			}
 		}],
-		polyline: [{
-		  points: [{
-			longitude: 113.3245211,
-			latitude: 23.10229
-		  }, {
-			longitude: 113.324520,
-			latitude: 23.21229
-		  }],
-		  color:"#FF0000DD",
-		  width: 2,
-		  dottedLine: true
-		}],
-		controls: [{
-		  id: 1,
-		  iconPath: '/resources/location.png',
-		  position: {
-			left: 0,
-			top: 300 - 50,
-			width: 50,
-			height: 50
-		  },
-		  clickable: true
-		}]
-	  },
-	  regionchange(e) {
-		console.log(e.type)
-	  },
-	  markertap(e) {
-		console.log(e.markerId)
-	  },
-	  controltap(e) {
-		console.log(e.controlId)
-	  }
+	},
+
+	onReady: function (e) { 
+		this.mapCtx = wx.createMapContext('myMap');
+	 },
+	 getCenterLocation: function (e) { 
+		 this.mapCtx.getCenterLocation({
+			 success: function(res) {
+				 console.log(res.longitude);
+				 console.log(res.latitude);
+			 }
+		 });
+		},
+		
+		moveToLocation: function () { 
+			this.mapCtx.moveToLocation();
+		},
+		
+		translateMarker: function () {
+			this.mapCtx.translateMarker({
+				markerId: 1,
+				autoRotate: true,
+				duration: 1000,
+				destination: {
+					latitude: 22.540822,
+					longitude: 113.934457
+				},
+				animationEnd() {
+					console.log('animation end');
+				}
+			});
+		},
+		includePoints: function () {
+			this.mapCtx.includePoints({
+				padding: [10],
+				points: [{
+					latitude: 22.540822,
+					longitude: 113.934457
+				}, {
+					latitude: 22.840822,
+					longitude: 114.234457
+				}]
+			});
+		},
+		getRegion: function () {
+			this.mapCtx.getRegion({
+				success: function(res) {
+					console.log('当前视野范围信息：', res);
+				}
+			});
+		},
+		getScale: function () {
+			this.mapCtx.getScale({
+				success: function(res) {
+					console.log('当前缩放级别信息：', res);
+				}
+			});
+		}
 })
