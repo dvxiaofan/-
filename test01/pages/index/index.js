@@ -1,64 +1,20 @@
-//index.js
-//获取应用实例
-// const app = getApp()
 
-// var initData = "This is the first line \nThis is the second line";
-// var extraLine = [];
+var iinfo = '';
+wx.getSystemInfo({
+  success: function(res) {
+    console.log(res.model)
+    console.log(res.pixelRatio)
+    console.log(res.windowWidth)
+    console.log(res.windowHeight)
+    console.log(res.language)
+    console.log(res.version)
+    console.log(res.platform)
+    iinfo = res.model;
+  }
+})
 
 Page({
-  // data: {
-  //   text: initData
-  // },
-  // add: function(e) {
-  //   extraLine.push("Other line")
-  //   this.setData({
-  //     text: initData + '\n' + extraLine.join('\n')
-  //   })
-  // },
-  // remove: function(e) {
-  //   if(extraLine.length > 0) {
-  //     extraLine.pop()
-  //     this.setData({
-  //       text: initData + '\n' + extraLine.join('\n')
-  //     })
-  //   }
-  // }
-
-// 富文本
-  // data: {
-  //   nodes: [{
-  //     name: 'div',
-  //     attrs: {
-  //       class: 'div_class',
-  //       style: 'line-height: 60px; color: red;'
-  //     },
-  //     children: [{
-  //       type: 'text',
-  //       text: 'Hello&nbsp;World!'
-  //     }]
-  //   }]
-  // },
-  // tap() {
-  //   console.log('tap');
-  // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  data: {
+    currentInfo: iinfo
+  }
 })
