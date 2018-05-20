@@ -1,1 +1,70 @@
-<view>{{currentInfo}}</view>
+<view class="container">
+  <template name="head" data="{{title: 'getSystemInfo'}}"/>
+
+  <view class="page-body">
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title">
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">手机型号：</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input type="text" placeholder="未获取" class="weui-input" disabled="{{true}}" value="{{systemInfo.model}}"/>
+          </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">微信语言：</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input type="text" placeholder="未获取" class="weui-input" disabled="{{true}}" value="{{systemInfo.language}}"/>
+          </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">微信版本：</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input type="text" placeholder="未获取" class="weui-input" disabled="{{true}}" value="{{systemInfo.version}}"/>
+          </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">屏幕宽度：</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input type="text" placeholder="未获取" class="weui-input" disabled="{{true}}" value="{{systemInfo.screenWidth}}"/>
+          </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">屏幕高度：</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input type="text" placeholder="未获取" class="weui-input" disabled="{{true}}" value="{{systemInfo.screenHeight}}"/>
+          </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">DPI：</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input type="text" placeholder="未获取" class="weui-input" disabled="{{true}}" value="{{systemInfo.pixelRatio}}"/>
+          </view>
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button type="primary" bindtap="getSystemInfo">获取手机系统信息</button>
+      </view>
+    </view>
+  </view>
+
+  <template name="foot" />
+</view>

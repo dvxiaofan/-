@@ -1,19 +1,20 @@
-/**index.wxss**/
 
-view{
-  text-align: center;
-  margin-top: 50px;
-  color: #999;
+
+.weui-cell {
+	margin-top: 10px;
 }
 
-progress{
-  padding-top: 60px;
+.weui-input {
+	background: rgb(240, 182, 182);
+	text-align: center;
 }
 
-.navigator-hover {
-  color: blue;
-}
 
-.other-navigator-hover {
-  color: red;
+
+
+
+
+
+.btn-area {
+	margin-top: 20px;
 }
